@@ -6,7 +6,7 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 Fachri Botz 〕
+┌─〔 Ary Botz 〕
 ├ Hai, *%name!*
 ├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 └────
@@ -203,7 +203,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `© *Fachri Botz*`.trim(),
+                        "description": `© *Ary Botz*`.trim(),
                         "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
                         "buttonText": "*Klik Disini*",
                         "listType": "SINGLE_SELECT",
@@ -341,11 +341,11 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Menu Khusus Owner",
                                     "rowId": ".? owner"
                                 }],
-                                "title": "⟣────────❲  Menu Fachri Botz  ❳───────────⟢"
+                                "title": "⟣────────❲  Menu Ary Botz  ❳───────────⟢"
                             }, {
                                 "rows": [{
                                     "title": "Owner bot",
-                                    "description": "pemilik Fachri",
+                                    "description": "pemilik Ary",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "Donasi",
